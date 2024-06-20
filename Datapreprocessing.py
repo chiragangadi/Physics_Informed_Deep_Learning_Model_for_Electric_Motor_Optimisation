@@ -60,8 +60,8 @@ for root, dirs, files in os.walk(main_directory):
 dataset = dataset[column_list]
 #print(dataset)
 #print(dataset.keys())
-dataset.to_csv("05_ErgebnisseSimulationen/dataset.csv")
-dataset.to_hdf("05_ErgebnisseSimulationen/dataset.h5", key='table', append=True)
+#dataset.to_csv("05_ErgebnisseSimulationen/dataset.csv")
+dataset.to_hdf("05_ErgebnisseSimulationen/dataset.h5", key='table')
 
 end_time = time.time()
 print(f"Time taken: {end_time - start_time:.6f} seconds")
